@@ -29,7 +29,9 @@ jobs:
     runs-on: ubuntu-lastest
   
     steps:
-      - name: Construir Image
+      - name: Importar Image
         uses: actions/checkout@v4
+        
+      - name: Construir Image
         run: docker build -t etiqueta .
           
