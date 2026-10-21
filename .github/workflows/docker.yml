@@ -1,0 +1,25 @@
+name: Builder Imagen
+
+on:
+  push:
+    branches: [main]
+
+  workflow_dispatch: # Manual
+
+permissions:
+  contents: read
+
+jobs:
+  construir:
+    name: Lint y Construccion
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Importar Checkout
+        uses: actions/checkout@4
+
+      - name: Lint de la receta
+        uses: hadolint/hadolint-action@v3.4.0
+        with:
+          dockerfile: Dockerfile
+          
