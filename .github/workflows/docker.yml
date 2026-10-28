@@ -24,14 +24,14 @@ jobs:
           dockerfile: Dockerfile
         
   construir:
-    name: construir
+    name: Construir Imagen
     needs: revisar
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
   
     steps:
-      - name: Importar Image
+      - name: Importar Checkout
         uses: actions/checkout@v4
         
-      - name: Construir Image
-        run: docker build -t etiqueta .
+      - name: Construir
+        run: docker build -t imagen/${{github.sha}} .
           
