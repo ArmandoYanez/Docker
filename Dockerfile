@@ -4,7 +4,7 @@ WORKDIR /server
 
 EXPOSE 25565
 
-RUN apt-get update && apt-get install  --no-install-recommends -y \ 
+RUN apt-get update && apt-get install --no-install-recommends -y \ 
 wget=1.25.0 \
 && rm -rf /var/lib/apt/lists/*
 
