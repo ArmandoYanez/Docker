@@ -36,7 +36,7 @@ jobs:
         run: docker save servidor-minecraft:latest -o servidor.tar
 
       - name: Subir imagen
-        uses: action/upload-artifact@v7
+        uses: actions/upload-artifact@v7
         with:
           name: imagen-docker
           path: servidor.tar 
