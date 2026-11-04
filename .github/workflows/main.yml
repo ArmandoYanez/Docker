@@ -74,7 +74,7 @@ jobs:
       - name: Descargar artifact
         uses: actions/download-artifact@v8
         with:
-          name: imagen-docker
+          name: imagen-docker-linux
 
       - name: Verificar imagen
         run: Get-Item servidor.tar
@@ -95,7 +95,7 @@ jobs:
       - name: Descargar artifact
         uses: actions/download-artifact@v8
         with:
-          name: imagen-docker
+          name: imagen-docker-windows
 
       - name: Verificar imagen
         shell: pwsh
