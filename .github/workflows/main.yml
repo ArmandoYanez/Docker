@@ -77,7 +77,7 @@ jobs:
           name: imagen-docker-linux
 
       - name: Verificar imagen
-        run: Get-Item servidor.tar
+        run: ls -lh servidor.tar
 
       - name: Cargar imagen de docker
         run: docker load -i servidor.tar
