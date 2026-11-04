@@ -85,7 +85,7 @@ jobs:
       - name: Verificar importacion
         run: |
           docker images
-          docker inspect minecraft-server:latest
+          docker inspect servidor-minecraft:latest
           
   importar-windows:
     runs-on: windows-latest
@@ -109,6 +109,6 @@ jobs:
         shell: pwsh
         run: |
           docker images
-          docker inspect minecraft-server:latest
+          docker inspect servidor-minecraft:latest
           
       
