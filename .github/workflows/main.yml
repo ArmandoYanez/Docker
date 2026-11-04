@@ -38,6 +38,6 @@ jobs:
       - name: Subir imagen
         uses: action/upload-artifact@v7
         with:
-          name: image-docker
+          name: imagen-docker
           path: servidor.tar 
           compression-level: 0
